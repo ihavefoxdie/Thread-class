@@ -1,7 +1,7 @@
 ﻿namespace Testing
 {
 
-    public class ThreadExample
+    public class Program
     {
         static Semaphore semaphoreObj = new(3, 3);
 
