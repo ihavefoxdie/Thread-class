@@ -3,7 +3,7 @@
 
     public class Program
     {
-        static Semaphore semaphoreObj = new(3, 3);
+        static Semaphore semaphoreObj = new(2, 2);
 
         public static void Print()
         {
@@ -35,11 +35,11 @@
                 {
                     Name = "Thread " + i.ToString()
                 };
-                //thread.IsBackground= true;            //this line of code is most likely going to make it so that no thread ever manages to execute Print()
+                //thread.IsBackground = true;            //this line of code is most likely going to make it so that no thread ever manages to execute Print()
                 thread.Start();
             }
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 6; i++)
             {
                 Thread hell = new(Loader)
                 {
